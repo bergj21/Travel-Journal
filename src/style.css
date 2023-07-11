@@ -1,0 +1,168 @@
+/* ---------------------- */
+/* Fonts                  */
+/* ---------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+/* ---------------------- */
+/* Custom properties      */
+/* ---------------------- */
+:root {
+  --clr-accent: #f55a5a;
+  --ff-main: "Inter", sans-serif;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --clr-text-main: #2b283a;
+    --clr-text-light: #918e9b;
+
+    --clr-background-light: #ffffff;
+  }
+}
+
+/* Dark Mode */
+/*
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-text-main: #fff;
+    --clr-text-light: #e5e5e5;
+
+    --clr-background-light: #1d1d1c;
+  }
+}
+*/
+
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------- */
+/* Typography             */
+/* ---------------------- */
+
+html {
+  font-family: var(--ff-main);
+  margin: 0;
+  padding: 0;
+  background-color: var(--clr-background-light);
+  scroll-behavior: smooth;
+}
+
+.grey {
+  color: var(--clr-text-light);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* ---------------------- */
+/* Components             */
+/* ---------------------- */
+
+/* NAVBAR */
+
+.navbar {
+  height: 50px;
+  background-color: var(--clr-accent);
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: center;
+}
+
+.nav-logo {
+  margin-right: 8px;
+  height: 30px;
+}
+
+/* CARD */
+
+.card {
+  font-family: var(--ff-main);
+  margin: 40px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px;
+  border-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+  width: 300px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+.card-information {
+  margin-top: 10px;
+  margin-right: 100px;
+}
+
+.card-location {
+  margin-bottom: 10px;
+}
+
+.location-dot {
+  color: var(--clr-accent);
+  margin-right: 6px;
+}
+
+.card-country {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  margin-right: 8px;
+}
+
+.google-maps {
+  color: #918e9b;
+  font-size: 10px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-date {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.card-description {
+  font-size: 14px;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #f55a5a;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
