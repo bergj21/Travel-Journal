@@ -21,18 +21,6 @@
   }
 }
 
-/* Dark Mode */
-/*
-@media (prefers-color-scheme: dark) {
-  :root {
-    --clr-text-main: #fff;
-    --clr-text-light: #e5e5e5;
-
-    --clr-background-light: #1d1d1c;
-  }
-}
-*/
-
 /* ---------------------- */
 /* Reset                  */
 /* ---------------------- */
@@ -50,7 +38,6 @@ img {
   width: 100%;
 }
 
-/* remove animations for people who've turned them off */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
